@@ -73,6 +73,29 @@
    
     }
    ```
+  - In touchesEnded: method:
+   ```objective-c
+     -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+        [super touchesEnded:touches withEvent:event];
+    
+        UITouch *touch = [touches anyObject];
+        CGPoint point = [touch locationInView:self.viewForTouch];
+    
+        self.endPoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
+
+        PDFSelection* selection = [self.readerPDF.currentPage selectionFromPoint:self.startPoint toPoint:self.endPoint];
+    
+        NSArray* array = [selection selectionsByLine];
+    
+            for (PDFSelection* select in array) {
+    
+                PDFAnnotation* annotation = [[PDFAnnotation alloc] initWithBounds:[select boundsForPage:self.readerPDF.currentPage] forType:PDFAnnotationSubtypeHighlight withProperties:nil];
+                
+                [self.readerPDF.currentPage addAnnotation:annotation];
+            }
+}
+
+```
  
  - Well done! After this we get perfect PDFSelection. And add annotation to selections coordinats.
 
