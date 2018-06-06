@@ -27,8 +27,8 @@
   - Use property:
   ``` objective-c
       @property (assign, nonatomic) CGPoint startPoint;
-      @property (assign, nonatomic) CGPoint endPoint;
       @property (assign, nonatomic) CGPoint currentMovePoint;
+      @property (assign, nonatomic) CGPoint endPoint;
      
   ```
 - In touchesBegan: method we will get the coordinates of the first point.
