@@ -25,44 +25,51 @@
   - Put subview on PDFView when user turn on "Pencil Mode"
   - Subiew removed from super view when called method: UITouchEnded
   - Use property:
-  ```
+  ``` objective-c
       @property (assign, nonatomic) CGPoint startPoint;
       @property (assign, nonatomic) CGPoint endPoint;
       @property (assign, nonatomic) CGPoint currentMovePoint;
      
   ```
 - In touchesBegan: method we will get the coordinates of the first point.
+- ❗️ Dont forget! PDFPage and UIVew - different coordinate systems
+  - Call this method for convert points from UIView to PDFView page.
   
- ```  
+ ``` objective-c
+     [PDFView* view convertPoint:point toPage:self.readerPDF.currentPage]
+ ```
+  
+ ```  objective-c
       -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-      [super touchesBegan:touches withEvent:event];
+        [super touchesBegan:touches withEvent:event];
     
-      UITouch *touch = [touches anyObject];
+        UITouch *touch = [touches anyObject];
     
-      CGPoint point = [touch locationInView:self.viewForTouch];
+        CGPoint point = [touch locationInView:self.viewForTouch];
     
-      self.startPoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
+        self.startPoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
       
       }
   ```
   
-   - In touchesMoved: method we will get the coordinates of the first point.
+   - In touchesMoved: method we will get the coordinates of the moved point.
    
-   ```
+   ```objective-c
       -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [super touchesMoved:touches withEvent:event];
+        [super touchesMoved:touches withEvent:event];
     
-    UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:self.viewForTouch];
+        UITouch *touch = [touches anyObject];
+        CGPoint point = [touch locationInView:self.viewForTouch];
     
-    self.endPoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
-    self.currentMovePoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
+        self.endPoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
+        self.currentMovePoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
     
-    PDFSelection* selection = [self.readerPDF.currentPage selectionFromPoint:self.startPoint toPoint:self.currentMovePoint];
-    NSArray* arraySelections = [selection selectionsByLine];
+        PDFSelection* selection = [self.readerPDF.currentPage selectionFromPoint:self.startPoint toPoint:self.currentMovePoint];
+        
+        NSArray* arraySelections = [selection selectionsByLine];
     
-    [self.readerPDF setHighlightedSelections:arraySelections];
-    [self.readerPDF setCurrentSelection: selection];
+        [self.readerPDF setHighlightedSelections:arraySelections];
+        [self.readerPDF setCurrentSelection: selection];
    
     }
    ```
