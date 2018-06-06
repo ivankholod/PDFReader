@@ -11,6 +11,6 @@
 ![alt text](https://thumbs.gfycat.com/ThriftyInfiniteKob-size_restricted.gif)
 
 
-# Also you can use colors from beatuful pallet color
+# Also you can use colors from beautiful pallet color
 
 ![alt text](https://thumbs.gfycat.com/WarlikeAntiqueHoatzin-size_restricted.gif)
