@@ -19,3 +19,8 @@
 # Look and navigate on all annotations:
 
 ![alt text](https://thumbs.gfycat.com/QuerulousAdolescentAnchovy-size_restricted.gif)
+
+# Just Tap and Remove annotations! :
+
+![alt text](https://thumbs.gfycat.com/HairyPotableHusky-size_restricted.gif)
+
