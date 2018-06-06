@@ -73,7 +73,8 @@
    
     }
    ```
-
+ 
+ - Well done! After this we get perfect PDFSelection. And add annotation to selections coordinats.
 
 # Examples
 
