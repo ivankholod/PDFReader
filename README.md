@@ -10,6 +10,9 @@
 - User can highlighted annotation for selected area which finger determined.
 - If you want delete annotations - turn on "Pencil Mode" and tap to area!
 
+# How it works?
+
+- Soon...
 
 # Examples
 
