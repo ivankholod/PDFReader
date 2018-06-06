@@ -5,6 +5,8 @@
 
 ![alt text](https://preview.ibb.co/mVtVv8/desk.png)
 
+![alt text](https://image.ibb.co/fOZqv8/onDevice.png)
+
 
 # Just select and autohighlight:
 
@@ -24,7 +26,7 @@
 
 ![alt text](https://thumbs.gfycat.com/HairyPotableHusky-size_restricted.gif)
 
-![alt text](https://image.ibb.co/fOZqv8/onDevice.png)
+
 
  
 
