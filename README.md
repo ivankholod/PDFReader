@@ -4,7 +4,7 @@
 
 # Description
 
-- Now it work only for all IPads.
+- Now it work only for all IPads, because i used UIPopovers. (You can change it, if you want)
 - User can open PDFDocuments from native iOS application "Files"
 - PDFDocument automatically saved and synchronizes in ICloud.
 - User can highlighted annotation for selected area which finger determined.
@@ -12,9 +12,15 @@
 
 # How it works?
 
-- I used native PDFKit
-- For work with documents: UIDocumentPickerController
-- Highlighted text: UITouch and PDFSelection
+- I used native PDFKit:
+  - https://developer.apple.com/documentation/pdfkit
+- For work with documents: UIDocumentPickerViewController:
+  - https://developer.apple.com/documentation/uikit/uidocumentpickerviewcontroller
+  
+- Highlighted text: UITouch and PDFSelection:
+  - UITouch dont called when PDFDocument is open.
+  - I solved this problem.
+ 
 - Handle UITouchDelegate:
   - Put subview on PDFView when user turn on "Pencil Mode"
   - Subiew removed from super view when called method: UITouchEnden
