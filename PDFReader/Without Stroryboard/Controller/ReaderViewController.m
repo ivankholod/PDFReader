@@ -60,6 +60,8 @@
 @property (strong, nonatomic) NSString* testWordForSearch;
 @property (strong, nonatomic) UIPopoverController* popoverSearch;
 
+@property (strong, nonatomic) UIActivityIndicatorView* indicator;
+
 @property (strong, nonatomic) CAGradientLayer* gradient;
 
 
@@ -368,13 +370,11 @@
     
     // Save changes
     
-    if (self.readerPDF.document) {
-        [self.readerPDF.document writeToURL:self.readerPDF.document.documentURL];
-    }
+    [self saveChages];
     
     [self.readerPDF removeFromSuperview];
     
-    self.navigationItem.title = @"Liquid | Reader";
+    self.navigationItem.title = @"PDFReader";
     
 }
 
@@ -482,10 +482,9 @@
     
     // Save changes
     
-    if (self.readerPDF.document) {
-        [self.readerPDF.document writeToURL:self.readerPDF.document.documentURL];
-    }
+    [self saveChages];
     
+   
     [self.navigationController presentViewController:self.documentPickerViewController animated:YES completion:nil];
     
     
@@ -583,6 +582,27 @@
 
 #pragma mark - Help Methods
 
+- (void) saveChages {
+    
+    self.indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    [self.indicator setFrame:CGRectMake(CGRectGetMaxX(self.view.frame) / 2,
+                                        CGRectGetMaxY(self.view.frame) / 2,
+                                         50,
+                                         50)];
+    
+
+    if (self.readerPDF.document) {
+        [self.readerPDF addSubview:self.indicator];
+        [self.indicator startAnimating];
+        
+        [self.readerPDF.document writeToURL:self.readerPDF.document.documentURL];
+        
+       // [self.indicator stopAnimating];
+       // [self.indicator removeFromSuperview];
+    }
+    
+}
+
 - (NSArray*) typesPDF {
     
     NSArray *types = @[@"public.composite-content"];
@@ -634,7 +654,10 @@
         [self showAlertWhenUserTookWrongDocument];
         
     }
-
+    
+    
+    
+    
     [self.view addSubview:self.readerPDF];
     
     // Timer for update current pages
