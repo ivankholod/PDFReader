@@ -14,7 +14,10 @@
 
 - I used native PDFKit
 - For work with documents: UIDocumentPickerController
-- highlighted text: UITouch and PDFSelection
+- Highlighted text: UITouch and PDFSelection
+- Handle UITouchDelegate:
+  - Put subview on PDFView when user turn on "Pencil Mode"
+  - Subiew removed from super view when called method: UITouchEnden
 
 # Examples
 
