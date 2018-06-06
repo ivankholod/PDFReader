@@ -494,6 +494,25 @@
     
     self.startPoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
     
+    
+    NSArray* annotations = self.readerPDF.currentPage.annotations;
+    NSMutableArray* annotationForDel = [NSMutableArray array];
+    
+    for (PDFAnnotation* annotation in annotations) {
+        if (CGRectContainsPoint(annotation.bounds , self.startPoint )) {
+            [annotationForDel addObject:annotation];
+        }
+    }
+   
+    // Remove selected annotations from page
+    
+    for (PDFAnnotation* annotation in annotationForDel) {
+        [self.readerPDF.currentPage removeAnnotation:annotation];
+    }
+    
+
+    
+    
     NSLog(@"touchesBegan");
     
     
