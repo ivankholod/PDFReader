@@ -495,6 +495,8 @@
     self.startPoint = [self.readerPDF convertPoint:point toPage:self.readerPDF.currentPage];
     
     
+    // Tap and Remove
+    
     NSArray* annotations = self.readerPDF.currentPage.annotations;
     NSMutableArray* annotationForDel = [NSMutableArray array];
     
