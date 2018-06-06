@@ -12,7 +12,9 @@
 
 # How it works?
 
-- Soon...
+- I used native PDFKit
+- For work with documents: UIDocumentPickerController
+- highlighted text: UITouch and PDFSelection
 
 # Examples
 
