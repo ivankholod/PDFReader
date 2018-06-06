@@ -89,9 +89,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
-    
-    
     
     // Index for Search
     
@@ -369,6 +366,12 @@
 - (void) goMainMenu {
     NSLog(@"goMainMenu");
     
+    // Save changes
+    
+    if (self.readerPDF.document) {
+        [self.readerPDF.document writeToURL:self.readerPDF.document.documentURL];
+    }
+    
     [self.readerPDF removeFromSuperview];
     
     self.navigationItem.title = @"Liquid | Reader";
@@ -473,9 +476,15 @@
 
 - (void) addPDFDocumentFromFiles {
    
-    self.documentPickerViewController = [[UIDocumentPickerViewController alloc] initWithDocumentTypes:[self typesPDF] inMode:UIDocumentPickerModeImport];
+    self.documentPickerViewController = [[UIDocumentPickerViewController alloc] initWithDocumentTypes:[self typesPDF] inMode:UIDocumentPickerModeOpen];
     
     self.documentPickerViewController.delegate = self;
+    
+    // Save changes
+    
+    if (self.readerPDF.document) {
+        [self.readerPDF.document writeToURL:self.readerPDF.document.documentURL];
+    }
     
     [self.navigationController presentViewController:self.documentPickerViewController animated:YES completion:nil];
     
@@ -609,9 +618,12 @@
     NSError *error;
     
     [[NSFileManager defaultManager] copyItemAtPath:string toPath:[documentFolderPath stringByAppendingString:fileName] error:&error];
+//
+//    PDFDocument* doc = [[PDFDocument alloc] initWithData: [[NSFileManager defaultManager] contentsAtPath:[documentFolderPath stringByAppendingString:fileName]]];
+//    NSLog(@"%ld",[doc pageCount]);
+//
     
-    PDFDocument* doc = [[PDFDocument alloc] initWithData: [[NSFileManager defaultManager] contentsAtPath:[documentFolderPath stringByAppendingString:fileName]]];
-    NSLog(@"%ld",[doc pageCount]);
+    PDFDocument* doc = [[PDFDocument alloc] initWithURL:[urls lastObject]];
     
     if (doc.string) {
         self.navigationItem.title = doc.string;

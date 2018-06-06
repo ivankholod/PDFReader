@@ -36,11 +36,7 @@
     self.searchWordField.placeholder        = @"Search in annotations";
     
     self.searchWordField.delegate = self;
-    
-    [self.searchWordField addTarget:self
-                  action:@selector(textFieldDidChange:)
-        forControlEvents:UIControlEventEditingChanged];
-    
+        
     [self.view addSubview:self.searchWordField];
     
     
@@ -96,11 +92,11 @@
 
 #pragma mark - UITextField Notification
 
-- (void) textFieldDidChange:(UITextField*) textField {
-    NSLog(@"textFieldDidChange");
-     [self.delegate goSearchWithString:textField.text];
-
-}
+//- (void) textFieldDidChange:(UITextField*) textField {
+//    NSLog(@"textFieldDidChange");
+//     [self.delegate goSearchWithString:textField.text];
+//
+//}
 
 #pragma mark - UITextFieldDelegate
 
@@ -109,7 +105,7 @@
 }
 
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
-    //[self.delegate goSearchWithString:textField.text];
+    [self.delegate goSearchWithString:textField.text];
     
     NSLog(@"textFieldShouldEndEditing");
     return YES;
