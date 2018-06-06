@@ -187,9 +187,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3748AF2B20A462E5003275CB /* Liquid Reader */ = {
+		3748AF2B20A462E5003275CB /* PDFReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3748AF4220A462E5003275CB /* Build configuration list for PBXNativeTarget "Liquid Reader" */;
+			buildConfigurationList = 3748AF4220A462E5003275CB /* Build configuration list for PBXNativeTarget "PDFReader" */;
 			buildPhases = (
 				3748AF2820A462E5003275CB /* Sources */,
 				3748AF2920A462E5003275CB /* Frameworks */,
@@ -199,7 +199,7 @@
 			);
 			dependencies = (
 			);
-			name = "Liquid Reader";
+			name = PDFReader;
 			productName = "Liquid Reader";
 			productReference = 3748AF2C20A462E5003275CB /* PDRReader.app */;
 			productType = "com.apple.product-type.application";
@@ -237,7 +237,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3748AF2B20A462E5003275CB /* Liquid Reader */,
+				3748AF2B20A462E5003275CB /* PDFReader */,
 			);
 		};
 /* End PBXProject section */
@@ -446,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3748AF4220A462E5003275CB /* Build configuration list for PBXNativeTarget "Liquid Reader" */ = {
+		3748AF4220A462E5003275CB /* Build configuration list for PBXNativeTarget "PDFReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3748AF4320A462E5003275CB /* Debug */,

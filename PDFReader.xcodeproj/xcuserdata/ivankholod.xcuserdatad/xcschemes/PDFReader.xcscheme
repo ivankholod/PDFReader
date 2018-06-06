@@ -34,7 +34,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3748AF2B20A462E5003275CB"
             BuildableName = "PDRReader.app"
-            BlueprintName = "Liquid Reader"
+            BlueprintName = "PDFReader"
             ReferencedContainer = "container:PDFReader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -57,7 +57,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3748AF2B20A462E5003275CB"
             BuildableName = "PDRReader.app"
-            BlueprintName = "Liquid Reader"
+            BlueprintName = "PDFReader"
             ReferencedContainer = "container:PDFReader.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
