@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PagesWithAnnotationTableViewCell" rowHeight="89" id="KGk-i7-Jjw" customClass="PagesWithAnnotationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mt7-i5-l1K">
+                        <rect key="frame" x="0.0" y="0.0" width="91" height="91"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAGE 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY9-pe-CfJ">
+                        <rect key="frame" x="273" y="70" width="127" height="19"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <color key="textColor" red="0.39375368535488625" green="0.35715184344935413" blue="0.54480754089200456" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="aW0-zy-SZf" firstAttribute="trailing" secondItem="LY9-pe-CfJ" secondAttribute="trailing" id="CXA-19-0FB"/>
+                <constraint firstItem="mt7-i5-l1K" firstAttribute="bottom" secondItem="aW0-zy-SZf" secondAttribute="bottom" constant="1" id="LoV-aZ-H2L"/>
+                <constraint firstItem="mt7-i5-l1K" firstAttribute="leading" secondItem="aW0-zy-SZf" secondAttribute="leading" id="O1v-iO-KHt"/>
+                <constraint firstItem="mt7-i5-l1K" firstAttribute="top" secondItem="aW0-zy-SZf" secondAttribute="top" id="Xdn-dT-DdL"/>
+                <constraint firstItem="aW0-zy-SZf" firstAttribute="trailing" secondItem="mt7-i5-l1K" secondAttribute="trailing" constant="309" id="YbQ-01-3pM"/>
+                <constraint firstItem="LY9-pe-CfJ" firstAttribute="leading" secondItem="aW0-zy-SZf" secondAttribute="leading" constant="273" id="g4l-Ty-CkN"/>
+                <constraint firstItem="LY9-pe-CfJ" firstAttribute="top" secondItem="aW0-zy-SZf" secondAttribute="top" constant="70" id="gKw-XS-ekI"/>
+                <constraint firstItem="aW0-zy-SZf" firstAttribute="bottom" secondItem="LY9-pe-CfJ" secondAttribute="bottom" constant="1" id="x67-Qb-umw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="imageViewPDF" destination="mt7-i5-l1K" id="7Wn-KE-Upg"/>
+                <outlet property="pageNumberLabel" destination="LY9-pe-CfJ" id="q7h-fa-9pT"/>
+            </connections>
+            <point key="canvasLocation" x="5.5" y="29.5"/>
+        </tableViewCell>
+    </objects>
+</document>

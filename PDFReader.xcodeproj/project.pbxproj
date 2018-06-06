@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3748AF3120A462E5003275CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3748AF3020A462E5003275CB /* AppDelegate.m */; };
+		3748AF3920A462E5003275CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3748AF3820A462E5003275CB /* Assets.xcassets */; };
+		3748AF3C20A462E5003275CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3748AF3A20A462E5003275CB /* LaunchScreen.storyboard */; };
+		3748AF3F20A462E5003275CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3748AF3E20A462E5003275CB /* main.m */; };
+		3748AF4720A463F9003275CB /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3748AF4620A463F9003275CB /* PDFKit.framework */; };
+		374FBB5A20A5672300554432 /* pencilButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 374FBB5920A5672300554432 /* pencilButton.png */; };
+		37561BD320B3134200933185 /* PagesWithAnnotationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37561BD020B3134200933185 /* PagesWithAnnotationTableViewCell.m */; };
+		37561BD420B3134200933185 /* PagesWithAnnotationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37561BD220B3134200933185 /* PagesWithAnnotationTableViewCell.xib */; };
+		37561BD820B3137400933185 /* PagesAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37561BD720B3137400933185 /* PagesAnnotationsViewController.m */; };
+		37561BDB20B31AD100933185 /* Pages.m in Sources */ = {isa = PBXBuildFile; fileRef = 37561BDA20B31AD100933185 /* Pages.m */; };
+		375E1E9820AC67F700CCBB6E /* ColorsPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375E1E9720AC67F700CCBB6E /* ColorsPopoverViewController.m */; };
+		375E1E9F20AC851800CCBB6E /* ColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 375E1E9D20AC851800CCBB6E /* ColorTableViewCell.m */; };
+		375E1EA020AC851800CCBB6E /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 375E1E9E20AC851800CCBB6E /* ColorTableViewCell.xib */; };
+		375E1EA320AC8B1B00CCBB6E /* PenColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 375E1EA220AC8B1B00CCBB6E /* PenColor.m */; };
+		378D077920AABDFA008F822B /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 378D077820AABDFA008F822B /* ReaderViewController.m */; };
+		378D077D20AAC2D2008F822B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 378D077C20AAC2D2008F822B /* logo.png */; };
+		3791425620B6A46200644993 /* SearchWordsInAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3791425520B6A46200644993 /* SearchWordsInAnnotationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3748AF2C20A462E5003275CB /* PDRReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDRReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3748AF2F20A462E5003275CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3748AF3020A462E5003275CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3748AF3820A462E5003275CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3748AF3B20A462E5003275CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3748AF3D20A462E5003275CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3748AF3E20A462E5003275CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3748AF4620A463F9003275CB /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		374FBB5920A5672300554432 /* pencilButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencilButton.png; sourceTree = "<group>"; };
+		37561BD020B3134200933185 /* PagesWithAnnotationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesWithAnnotationTableViewCell.m; sourceTree = "<group>"; };
+		37561BD120B3134200933185 /* PagesWithAnnotationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagesWithAnnotationTableViewCell.h; sourceTree = "<group>"; };
+		37561BD220B3134200933185 /* PagesWithAnnotationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PagesWithAnnotationTableViewCell.xib; sourceTree = "<group>"; };
+		37561BD620B3137400933185 /* PagesAnnotationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagesAnnotationsViewController.h; sourceTree = "<group>"; };
+		37561BD720B3137400933185 /* PagesAnnotationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagesAnnotationsViewController.m; sourceTree = "<group>"; };
+		37561BD920B31AD100933185 /* Pages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pages.h; sourceTree = "<group>"; };
+		37561BDA20B31AD100933185 /* Pages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pages.m; sourceTree = "<group>"; };
+		375E1E9620AC67F700CCBB6E /* ColorsPopoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorsPopoverViewController.h; sourceTree = "<group>"; };
+		375E1E9720AC67F700CCBB6E /* ColorsPopoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsPopoverViewController.m; sourceTree = "<group>"; };
+		375E1E9C20AC851800CCBB6E /* ColorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorTableViewCell.h; sourceTree = "<group>"; };
+		375E1E9D20AC851800CCBB6E /* ColorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorTableViewCell.m; sourceTree = "<group>"; };
+		375E1E9E20AC851800CCBB6E /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
+		375E1EA120AC8B1B00CCBB6E /* PenColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PenColor.h; sourceTree = "<group>"; };
+		375E1EA220AC8B1B00CCBB6E /* PenColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PenColor.m; sourceTree = "<group>"; };
+		378D077720AABDFA008F822B /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
+		378D077820AABDFA008F822B /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
+		378D077C20AAC2D2008F822B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		3791425420B6A46200644993 /* SearchWordsInAnnotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchWordsInAnnotationViewController.h; sourceTree = "<group>"; };
+		3791425520B6A46200644993 /* SearchWordsInAnnotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchWordsInAnnotationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3748AF2920A462E5003275CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3748AF4720A463F9003275CB /* PDFKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3748AF2320A462E5003275CB = {
+			isa = PBXGroup;
+			children = (
+				3748AF2E20A462E5003275CB /* PDFReader */,
+				3748AF2D20A462E5003275CB /* Products */,
+				3748AF4520A463F9003275CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3748AF2D20A462E5003275CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3748AF2C20A462E5003275CB /* PDRReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3748AF2E20A462E5003275CB /* PDFReader */ = {
+			isa = PBXGroup;
+			children = (
+				378D077A20AABFFC008F822B /* System */,
+				37646C2720B81E7600BC7939 /* Without Stroryboard */,
+				3748AF3820A462E5003275CB /* Assets.xcassets */,
+				3748AF3A20A462E5003275CB /* LaunchScreen.storyboard */,
+				3748AF3D20A462E5003275CB /* Info.plist */,
+				3748AF3E20A462E5003275CB /* main.m */,
+			);
+			path = PDFReader;
+			sourceTree = "<group>";
+		};
+		3748AF4520A463F9003275CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3748AF4620A463F9003275CB /* PDFKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37561BD520B3134C00933185 /* PagesCell */ = {
+			isa = PBXGroup;
+			children = (
+				37561BD920B31AD100933185 /* Pages.h */,
+				37561BDA20B31AD100933185 /* Pages.m */,
+				37561BD120B3134200933185 /* PagesWithAnnotationTableViewCell.h */,
+				37561BD020B3134200933185 /* PagesWithAnnotationTableViewCell.m */,
+				37561BD220B3134200933185 /* PagesWithAnnotationTableViewCell.xib */,
+			);
+			name = PagesCell;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		375E1EA420AC8FA700CCBB6E /* ColorsCell */ = {
+			isa = PBXGroup;
+			children = (
+				375E1EA120AC8B1B00CCBB6E /* PenColor.h */,
+				375E1EA220AC8B1B00CCBB6E /* PenColor.m */,
+				375E1E9C20AC851800CCBB6E /* ColorTableViewCell.h */,
+				375E1E9D20AC851800CCBB6E /* ColorTableViewCell.m */,
+				375E1E9E20AC851800CCBB6E /* ColorTableViewCell.xib */,
+			);
+			path = ColorsCell;
+			sourceTree = "<group>";
+		};
+		37646C2720B81E7600BC7939 /* Without Stroryboard */ = {
+			isa = PBXGroup;
+			children = (
+				378D077B20AAC003008F822B /* Controller */,
+				378D077E20AAD300008F822B /* Images */,
+			);
+			path = "Without Stroryboard";
+			sourceTree = "<group>";
+		};
+		378D077A20AABFFC008F822B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3748AF2F20A462E5003275CB /* AppDelegate.h */,
+				3748AF3020A462E5003275CB /* AppDelegate.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		378D077B20AAC003008F822B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				378D077720AABDFA008F822B /* ReaderViewController.h */,
+				378D077820AABDFA008F822B /* ReaderViewController.m */,
+				37B017D320B45AA400B030F9 /* Popovers */,
+				37561BD520B3134C00933185 /* PagesCell */,
+				375E1EA420AC8FA700CCBB6E /* ColorsCell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		378D077E20AAD300008F822B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				374FBB5920A5672300554432 /* pencilButton.png */,
+				378D077C20AAC2D2008F822B /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		37B017D320B45AA400B030F9 /* Popovers */ = {
+			isa = PBXGroup;
+			children = (
+				37561BD620B3137400933185 /* PagesAnnotationsViewController.h */,
+				37561BD720B3137400933185 /* PagesAnnotationsViewController.m */,
+				375E1E9620AC67F700CCBB6E /* ColorsPopoverViewController.h */,
+				375E1E9720AC67F700CCBB6E /* ColorsPopoverViewController.m */,
+				3791425420B6A46200644993 /* SearchWordsInAnnotationViewController.h */,
+				3791425520B6A46200644993 /* SearchWordsInAnnotationViewController.m */,
+			);
+			path = Popovers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3748AF2B20A462E5003275CB /* Liquid Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3748AF4220A462E5003275CB /* Build configuration list for PBXNativeTarget "Liquid Reader" */;
+			buildPhases = (
+				3748AF2820A462E5003275CB /* Sources */,
+				3748AF2920A462E5003275CB /* Frameworks */,
+				3748AF2A20A462E5003275CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Liquid Reader";
+			productName = "Liquid Reader";
+			productReference = 3748AF2C20A462E5003275CB /* PDRReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3748AF2420A462E5003275CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ivan Kholod";
+				TargetAttributes = {
+					3748AF2B20A462E5003275CB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3748AF2720A462E5003275CB /* Build configuration list for PBXProject "PDFReader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3748AF2320A462E5003275CB;
+			productRefGroup = 3748AF2D20A462E5003275CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3748AF2B20A462E5003275CB /* Liquid Reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3748AF2A20A462E5003275CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				378D077D20AAC2D2008F822B /* logo.png in Resources */,
+				3748AF3C20A462E5003275CB /* LaunchScreen.storyboard in Resources */,
+				374FBB5A20A5672300554432 /* pencilButton.png in Resources */,
+				3748AF3920A462E5003275CB /* Assets.xcassets in Resources */,
+				37561BD420B3134200933185 /* PagesWithAnnotationTableViewCell.xib in Resources */,
+				375E1EA020AC851800CCBB6E /* ColorTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3748AF2820A462E5003275CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37561BD820B3137400933185 /* PagesAnnotationsViewController.m in Sources */,
+				3748AF3F20A462E5003275CB /* main.m in Sources */,
+				3748AF3120A462E5003275CB /* AppDelegate.m in Sources */,
+				37561BDB20B31AD100933185 /* Pages.m in Sources */,
+				378D077920AABDFA008F822B /* ReaderViewController.m in Sources */,
+				37561BD320B3134200933185 /* PagesWithAnnotationTableViewCell.m in Sources */,
+				375E1E9F20AC851800CCBB6E /* ColorTableViewCell.m in Sources */,
+				375E1E9820AC67F700CCBB6E /* ColorsPopoverViewController.m in Sources */,
+				3791425620B6A46200644993 /* SearchWordsInAnnotationViewController.m in Sources */,
+				375E1EA320AC8B1B00CCBB6E /* PenColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3748AF3A20A462E5003275CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3748AF3B20A462E5003275CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3748AF4020A462E5003275CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3748AF4120A462E5003275CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3748AF4320A462E5003275CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YUG8W8FNHK;
+				INFOPLIST_FILE = "$(SRCROOT)/PDFReader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ivankholod.PDFReader;
+				PRODUCT_NAME = PDRReader;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3748AF4420A462E5003275CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YUG8W8FNHK;
+				INFOPLIST_FILE = "$(SRCROOT)/PDFReader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.ivankholod.PDFReader;
+				PRODUCT_NAME = PDRReader;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3748AF2720A462E5003275CB /* Build configuration list for PBXProject "PDFReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3748AF4020A462E5003275CB /* Debug */,
+				3748AF4120A462E5003275CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3748AF4220A462E5003275CB /* Build configuration list for PBXNativeTarget "Liquid Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3748AF4320A462E5003275CB /* Debug */,
+				3748AF4420A462E5003275CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3748AF2420A462E5003275CB /* Project object */;
+}
