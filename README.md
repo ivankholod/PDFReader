@@ -1,4 +1,4 @@
-# PDFReader - Simple PDF Reader and Redactor
+# PDFReader - Simple PDF Reader and Editor
 
 ![alt text](https://preview.ibb.co/mVtVv8/desk.png)
 
