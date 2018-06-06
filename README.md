@@ -99,7 +99,7 @@
  
  - Well done! After this we get perfect PDFSelection. And add annotation to selections coordinats.
 
-# Examples
+# Examples:
 
 # Just select and autohighlight:
 
